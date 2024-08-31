@@ -1,0 +1,96 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --color-shade-1: #666362;
+  --color-shade-2: #494f55;
+  --color-shade-3: #3b3c36;
+}
+html {
+  font-size: 16px;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  background: rgb(255, 255, 255);
+  line-height: 1.6;
+}
+a {
+  text-decoration: none;
+  color: black;
+  &:hover {
+    color: brown;
+  }
+}
+li {
+  list-style: none;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: small;
+}
+
+/* header */
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 1.875rem 3rem;
+}
+
+ul {
+  display: flex;
+  gap: 0.875rem;
+}
+
+.dot {
+  height: 1.4375rem;
+  width: 1.4375rem;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+}
+.dot-1 {
+  background-color: var(--color-shade-1);
+}
+.dot-2 {
+  background-color: var(--color-shade-2);
+}
+.dot-3 {
+  background-color: var(--color-shade-3);
+}
+
+.hero {
+  padding: 1.875rem 3rem;
+  width: max(70%, 800px);
+  margin-top: 1.875rem;
+  font-size: clamp(0.3rem, 1vw + 0.5rem, 1rem);
+  margin-bottom: 4px;
+}
+
+.btn {
+  padding: 0.3725rem 0.485rem;
+  border: 0.5px solid black;
+  border-radius: 10px 10px;
+  font-weight: 700;
+  font-size: 10px;
+  text-transform: uppercase;
+}
+.btn-1 {
+  background: rgb(27, 27, 27);
+  color: white;
+  &:hover {
+    color: rgb(27, 27, 27);
+    background-color: white;
+    opacity: 0.5;
+  }
+}
+.btn-2 {
+  color: rgb(27, 27, 27);
+  background-color: white;
+  &:hover {
+    background-color: rgb(27, 27, 27);
+    color: white;
+    opacity: 0.5;
+  }
+}
