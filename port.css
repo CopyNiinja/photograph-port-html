@@ -81,12 +81,12 @@ ul {
   background-color: var(--color-shade-3);
 }
 /* .dot-sm {
-  height: 0.5rem;
-  width: 0.5rem;
-  background-color: #bbb;
-  border-radius: 50%;
-  display: inline-block;
-} */
+    height: 0.5rem;
+    width: 0.5rem;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+  } */
 
 .hero {
   padding: 1.875rem 3rem;
@@ -96,8 +96,8 @@ ul {
   margin-bottom: 4px;
 }
 /* .highlight {
-  color: var(--color-shade-1);
-} */
+    color: var(--color-shade-1);
+  } */
 .btn {
   padding: 0.3725rem 0.485rem;
   border: 0.5px solid black;
@@ -157,8 +157,8 @@ main {
     margin-left: 5px;
   }
   /* i {
-    color: white;
-  } */
+      color: white;
+    } */
   img {
     width: 33.33%;
     border: 4px solid rgb(221, 221, 221);
@@ -191,6 +191,10 @@ main {
     color: black;
   }
 }
+.footer {
+  background: #2c2f31;
+  margin-top: -50px;
+}
 .myself {
   display: flex;
   align-items: center;
@@ -218,7 +222,30 @@ main {
   margin-top: -1.85rem;
   filter: none;
 }
-
+.copy {
+  color: rgb(184, 184, 184);
+  font-size: smaller;
+}
+hr {
+  height: 0.3px;
+  color: rgb(112, 112, 112);
+}
+.copy-right {
+  display: flex;
+  color: rgb(221, 221, 221);
+  justify-content: space-between;
+  margin: 0 1.25rem;
+  margin-bottom: -3.125rem;
+}
+h3 {
+  color: rgb(230, 228, 228);
+}
+.d-flex {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 2.625rem;
+  font-size: smaller;
+}
 @media (max-width: 800px) {
   html {
     font-size: 14px;
@@ -336,6 +363,15 @@ main {
   .myself-txt {
     font-size: clamp(1rem, 0.5vw + 0.3rem, 1.8rem);
   }
+  .d-flex {
+    font-size: x-small;
+  }
+  .copy {
+    font-size: x-small;
+  }
+  .icons {
+    font-size: smaller;
+  }
 }
 @media (max-width: 486px) {
   .portrait-heading h2 {
@@ -374,5 +410,11 @@ main {
   }
   .hero p {
     font-size: 1rem;
+  }
+  .copy {
+    font-size: xx-small;
+  }
+  .icons {
+    font-size: x-small;
   }
 }
